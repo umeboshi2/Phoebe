@@ -14,6 +14,8 @@ requires = [
     'pyramid_debugtoolbar',
     'zope.sqlalchemy',
     'waitress',
+    'trumpet>=0.1dev',
+    'hubby>=0.0dev',
     ]
 
 setup(name='Phoebe',
@@ -41,5 +43,9 @@ setup(name='Phoebe',
       [console_scripts]
       initialize_Phoebe_db = phoebe.scripts.initializedb:main
       """,
+      dependency_links=[
+        'https://github.com/umeboshi2/trumpet/archive/master.tar.gz#egg=trumpet-0.1.1dev',
+        'https://github.com/umeboshi2/hubby/archive/master.tar.gz#egg=hubby-0.0dev',
+        ],
       )
 
