@@ -14,6 +14,8 @@ requires = [
     'pyramid_debugtoolbar',
     'zope.sqlalchemy',
     'waitress',
+    'colander>=0.9.9.1dev',
+    'deform>=0.9.6dev',
     'trumpet>=0.1dev',
     'hubby>=0.0dev',
     ]
@@ -46,6 +48,8 @@ setup(name='Phoebe',
       dependency_links=[
         'https://github.com/umeboshi2/trumpet/archive/master.tar.gz#egg=trumpet-0.1.1dev',
         'https://github.com/umeboshi2/hubby/archive/master.tar.gz#egg=hubby-0.0dev',
+      'https://github.com/umeboshi2/deform/archive/master.tar.gz#egg=deform-0.9.6dev',
+      'https://github.com/Pylons/colander/archive/master.tar.gz#egg=colander-0.9.9.1dev',
         ],
       )
 
