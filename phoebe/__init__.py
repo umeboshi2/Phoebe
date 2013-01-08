@@ -3,7 +3,7 @@ from sqlalchemy import engine_from_config
 
 from trumpet.models.base import DBSession, Base
 
-from .models import (
+from phoebe.models import (
     MyModel,
     )
 
