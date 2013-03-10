@@ -58,7 +58,12 @@ def main(global_config, **settings):
                     layout='base')
     
     configure_login(config)
-    configure_rssviewer(config, '/rssviewer')
+
+    #configure_rssviewer(config, '/rssviewer')
+    config.add_route('rssviewer', '/rssviewer/{context}/{feed}')
+    config.add_view('trumpet.views.rssviewer.MainViewer',
+                    route_name='rssviewer', layout='base')
+
     configure_wiki(config, '/wiki')
 
     return config.make_wsgi_app()
